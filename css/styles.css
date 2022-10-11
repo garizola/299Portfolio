@@ -367,6 +367,7 @@ nav #rightNav a:hover {
   height: 90vh;
   display: flex;
   font-family: helvetica;
+  margin-bottom: 100px;
 }
 #contact #leftContact {
   display: flex;
