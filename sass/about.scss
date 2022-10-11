@@ -1,0 +1,76 @@
+#about {
+    width: 100%;
+    height: 100vh; 
+    // border: 5px dotted green;
+    // position: relative;
+    display: flex;
+    // position: relative;
+
+    #leftAboutContent {
+        font-family: helvetica;
+        
+        // border: 3px dotted yellowgreen;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        #leftAboutHeader {
+            color: $site-grey;
+            width: 100%;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-size: 3vw;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            
+           
+        }
+        #leftAboutP {
+            color: $site-green;
+            font-size: 1.9vw;
+            width: 95%;
+            margin-bottom: 70px;
+        }
+
+        #leftAboutImg {
+            height: 100%;
+            width: 735px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url("/images/the-best-beginner-nike-running-shoes.jpg");
+            margin-top: 20px;
+            margin-bottom: -100px;
+            margin-left: 60px;
+        
+        }
+    }
+
+    #rightAboutContent {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        #rightAboutP {
+        font-family: helvetica;
+            color: $site-grey;
+            font-size: 1.9vw;
+            width: 95%;
+            margin-bottom: 120px;
+            padding-top: 110px;
+            margin-top: 40px;
+        }
+        #greenBar {
+            max-width: 775px;
+            width: 100%;
+            height: 100px;
+            background-size: contain;
+            background-color: $site-green;
+            margin-top: 250px;
+        }
+    }
+
+}
+
+// @media screen (max-width: 500px) {
+    
+// }

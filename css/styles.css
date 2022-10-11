@@ -1,0 +1,484 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+@font-face {
+  html, body {
+    font-family: helvetica;
+    src: url(../HelveticaNeueMediumExtended.ttf);
+  }
+}
+html .container, body .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 120px 0 120px;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+nav {
+  font-family: helvetica;
+  width: 100%;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav #leftNavIcon {
+  height: 84px;
+  width: 84px;
+  padding: 20px;
+}
+nav #leftNavIcon a img {
+  height: 100%;
+  width: 100%;
+  size: cover;
+}
+nav #rightNav {
+  height: 100%;
+  width: 550px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+nav #rightNav a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav #rightNav a img {
+  height: 36px;
+  width: 36px;
+  size: cover;
+}
+nav #rightNav a:hover {
+  text-decoration: none;
+  color: #00E56B;
+}
+
+#home {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  display: flex;
+}
+#home #homeHero {
+  background-image: url("/images/main-icon-white-on-black.png");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -100px;
+  margin-top: -30px;
+  padding: 100px;
+}
+#home #homeContent {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  margin-left: -50px;
+}
+#home #homeContent #homeHeader {
+  font-family: helvetica;
+  font-weight: bold;
+  color: #707070;
+  width: 100%;
+  height: 15.4%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.7vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -100px;
+}
+#home #homeContent #homeHeaderHero {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/images/nike’s-most-lightweight-running-shoes.jpg");
+  margin-bottom: -80px;
+  margin-left: -50px;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+#about #leftAboutContent {
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#about #leftAboutContent #leftAboutHeader {
+  color: #707070;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 3vw;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+#about #leftAboutContent #leftAboutP {
+  color: #00E56B;
+  font-size: 1.9vw;
+  width: 95%;
+  margin-bottom: 70px;
+}
+#about #leftAboutContent #leftAboutImg {
+  height: 100%;
+  width: 735px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/images/the-best-beginner-nike-running-shoes.jpg");
+  margin-top: 20px;
+  margin-bottom: -100px;
+  margin-left: 60px;
+}
+#about #rightAboutContent {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#about #rightAboutContent #rightAboutP {
+  font-family: helvetica;
+  color: #707070;
+  font-size: 1.9vw;
+  width: 95%;
+  margin-bottom: 120px;
+  padding-top: 110px;
+  margin-top: 40px;
+}
+#about #rightAboutContent #greenBar {
+  max-width: 775px;
+  width: 100%;
+  height: 100px;
+  background-size: contain;
+  background-color: #00E56B;
+  margin-top: 250px;
+}
+
+#products {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  position: relative;
+  font-family: helvetica;
+  padding-bottom: 20px;
+}
+#products #leftProducts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#products #leftProducts #leftProductsP {
+  width: 95%;
+  margin-top: 150px;
+  color: #707070;
+  font-size: 3vh;
+  line-height: 40px;
+}
+#products #leftProducts #btnContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#products #leftProducts #btnContainer #moreProducts {
+  height: 100%;
+  width: 33%;
+  background-size: contain;
+  background-color: #00E56B;
+  border: 0px;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1vw;
+  padding: 20px;
+}
+#products #leftProducts #btnContainer #moreProducts:hover {
+  background-color: white;
+  border: 8px solid #00E56B;
+}
+#products #rightProducts {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+#products #rightProducts #rightProdsHeader {
+  color: #707070;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 3vw;
+}
+#products #rightProducts #productImgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  margin-left: 40px;
+}
+#products #rightProducts #productImgs #phone {
+  height: 100%;
+  width: 120%;
+  margin-right: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/images/Diet-2-749r0hn1kgu0zrm9rf8pjg8w4y400h8pz4nnluxemvk.png");
+  margin-right: -50px;
+  margin-top: 40px;
+}
+#products #rightProducts #productImgs #phone #watch {
+  height: 45%;
+  width: 45%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("/images/whoop.webp");
+}
+
+#services {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  font-family: helvetica;
+}
+#services #serWords {
+  height: 65%;
+  width: 100%;
+  display: flex;
+}
+#services #serWords #leftWords {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#services #serWords #leftWords #leftServHeader {
+  color: #707070;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 3vw;
+  margin-bottom: 30px;
+}
+#services #serWords #leftWords #leftServP {
+  color: #707070;
+  font-size: 1.8vw;
+  width: 95%;
+}
+#services #serWords #rightWords {
+  margin-top: 20px;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+#services #serWords #rightWords .sDesc {
+  width: 100%;
+  height: 25%;
+}
+#services #serWords #rightWords .sDesc #sGreen {
+  color: #00E56B;
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+#services #serWords #rightWords .sDesc #sReadout {
+  color: #707070;
+  font-size: 1.5vw;
+}
+#services #imgBtn {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#services #imgBtn #gymImg {
+  height: 140%;
+  width: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/images/unspecified-21-1024x682.jpeg");
+  margin-top: 170px;
+}
+#services #imgBtn #gbContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+#services #imgBtn .greenBtn {
+  height: 20%;
+  padding: 20px;
+  width: 33%;
+  background-size: contain;
+  background-color: #00E56B;
+  border: 0px;
+  color: #707070;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1vw;
+  margin-left: 180px;
+}
+#services #imgBtn .greenBtn:hover {
+  background-color: white;
+  border: 8px solid #00E56B;
+}
+
+#contact {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  font-family: helvetica;
+}
+#contact #leftContact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin-top: 260px;
+}
+#contact #leftContact #locationsHeader {
+  color: #707070;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 4vw;
+  margin-bottom: 30px;
+}
+#contact #leftContact .locations {
+  width: 100%;
+  margin-bottom: 25px;
+  color: #707070;
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+#contact #rightContact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 40px;
+}
+#contact #rightContact #contactHeader {
+  color: #707070;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 3vw;
+  margin-top: 46px;
+  margin-bottom: 180px;
+  margin-left: 160px;
+}
+#contact #rightContact .contactForm {
+  font-size: 1.5vw;
+  font-weight: bold;
+  height: 80%;
+}
+#contact #rightContact .contactForm label {
+  margin-bottom: 20px;
+}
+#contact #rightContact .contactForm input {
+  width: 80%;
+  height: 20%;
+  border: 2 solid #707070;
+  margin-top: 20px;
+  background-color: lightgray;
+}
+#contact #rightContact .contactForm #qc {
+  width: 80%;
+  height: 40%;
+  border: 2 solid #707070;
+  margin-top: 20px;
+  background-color: lightgray;
+}
+
+footer {
+  font-family: helvetica;
+  width: 100%;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #707070;
+}
+footer #leftNav {
+  height: 100%;
+  width: 550px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+footer #leftNav a {
+  text-decoration: none;
+  color: #00E56B;
+  font-size: 16px;
+  font-weight: bold;
+}
+footer #leftNav a img {
+  height: 36px;
+  width: 36px;
+  size: cover;
+}
+footer #leftNav a:hover {
+  text-decoration: none;
+  color: white;
+}
+footer #rightIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 84px;
+  width: 175;
+  padding: 20px;
+}
+footer #rightIcons img {
+  height: 100%;
+  width: 100%;
+  size: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */
