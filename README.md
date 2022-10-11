@@ -15,4 +15,4 @@
 - I added large images of athletes and a very nice gym to hopefully encourage the user to want to be like the athlete or want to be in the gym.
 
 - [web 4 site](https://in-info-web4.informatics.iupui.edu/~garizola/portfolioN299/)
-- [xd File](hhttps://xd.adobe.com/view/e0a3b762-10b1-404a-a32f-06edd884a40f-b5f0/)
+- [xd File](https://xd.adobe.com/view/1808ee51-dafd-4f02-926f-b461dd353bf4-4d5b/)
