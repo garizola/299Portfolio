@@ -78,7 +78,7 @@ nav #rightNav a:hover {
   display: flex;
 }
 #home #homeHero {
-  background-image: url("/images/main-icon-white-on-black.png");
+  background-image: url("../images/main-icon-white-on-black.png");
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -114,7 +114,7 @@ nav #rightNav a:hover {
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("/images/nike’s-most-lightweight-running-shoes.jpg");
+  background-image: url("../images/nike’s-most-lightweight-running-shoes.jpg");
   margin-bottom: -80px;
   margin-left: -50px;
 }
@@ -152,7 +152,7 @@ nav #rightNav a:hover {
   width: 735px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("/images/the-best-beginner-nike-running-shoes.jpg");
+  background-image: url("../images/the-best-beginner-nike-running-shoes.jpg");
   margin-top: 20px;
   margin-bottom: -100px;
   margin-left: 60px;
@@ -254,7 +254,7 @@ nav #rightNav a:hover {
   margin-right: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("/images/Diet-2-749r0hn1kgu0zrm9rf8pjg8w4y400h8pz4nnluxemvk.png");
+  background-image: url("../images/Diet-2-749r0hn1kgu0zrm9rf8pjg8w4y400h8pz4nnluxemvk.png");
   margin-right: -50px;
   margin-top: 40px;
 }
@@ -263,7 +263,7 @@ nav #rightNav a:hover {
   width: 45%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("/images/whoop.webp");
+  background-image: url("../images/whoop.webp");
 }
 
 #services {
@@ -334,7 +334,7 @@ nav #rightNav a:hover {
   width: 60%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/images/unspecified-21-1024x682.jpeg");
+  background-image: url("../images/unspecified-21-1024x682.jpeg");
   margin-top: 170px;
 }
 #services #imgBtn #gbContainer {
