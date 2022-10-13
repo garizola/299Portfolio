@@ -55,3 +55,42 @@ footer {
 
 
 }
+@media screen and (max-width: 660px){
+    footer {
+        margin-top: 100px;
+        font-family: helvetica;
+        width: 100%;
+        height: 84px;
+        // border: 5px dotted black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $site-grey;
+        #leftNav {
+            height: 100%;
+            width: 550px;
+            // border: 5px dotted brown;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+            a {
+                text-decoration: none;
+                color: $site-green;
+                font-size: 10px;
+                font-weight: bold;
+    
+                img {
+                    height: 36px;
+                    width: 36px;
+                    size: cover;
+                }
+            }
+            a:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

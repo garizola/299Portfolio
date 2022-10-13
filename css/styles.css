@@ -28,6 +28,15 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
+@media screen and (max-width: 960px) {
+  body {
+    padding: 10px;
+  }
+  body .container {
+    padding-bottom: 50px;
+    display: flex;
+  }
+}
 nav {
   font-family: helvetica;
   width: 100%;
@@ -71,6 +80,50 @@ nav #rightNav a:hover {
   color: #00E56B;
 }
 
+@media only screen and (max-width: 650px) {
+  nav {
+    font-family: helvetica;
+    width: 100%;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav #leftNavIcon {
+    height: 84px;
+    width: 84px;
+    padding: 20px;
+  }
+  nav #leftNavIcon a img {
+    height: 100%;
+    width: 100%;
+    size: cover;
+  }
+  nav #rightNav {
+    height: 100%;
+    width: 550px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  nav #rightNav a {
+    text-decoration: none;
+    color: #707070;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  nav #rightNav a img {
+    height: 36px;
+    width: 36px;
+    size: cover;
+  }
+  nav #rightNav a:hover {
+    text-decoration: none;
+    color: #00E56B;
+  }
+}
 #home {
   width: 100%;
   height: 85vh;
@@ -83,7 +136,7 @@ nav #rightNav a:hover {
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: -100px;
+  margin-left: -200px;
   margin-top: -30px;
   padding: 100px;
 }
@@ -93,7 +146,7 @@ nav #rightNav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
+  padding: 50px;
   margin-left: -50px;
 }
 #home #homeContent #homeHeader {
@@ -106,7 +159,7 @@ nav #rightNav a:hover {
   flex-wrap: wrap;
   font-size: 2.7vw;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   margin-left: -100px;
 }
 #home #homeContent #homeHeaderHero {
@@ -115,10 +168,65 @@ nav #rightNav a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../images/nike’s-most-lightweight-running-shoes.jpg");
+  padding: 20px;
   margin-bottom: -80px;
   margin-left: -50px;
 }
 
+@media screen and (max-width: 960px) {
+  #home {
+    width: 100%;
+    min-height: 650px;
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+  }
+  #home #homeHero {
+    background-image: url("../images/main-icon-white-on-black.png");
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  #home #homeContent {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  #home #homeContent #homeHeader {
+    font-family: helvetica;
+    font-weight: bold;
+    color: #707070;
+    height: 100px;
+    display: flex;
+    flex-wrap: none;
+    font-size: 26px;
+    margin-left: 0px;
+  }
+  #home #homeContent #homeHeaderHero {
+    height: 500px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/nike’s-most-lightweight-running-shoes.jpg");
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+}
 #about {
   width: 100%;
   height: 100vh;
@@ -180,6 +288,77 @@ nav #rightNav a:hover {
   margin-top: 250px;
 }
 
+@media only screen and (max-width: 960px) {
+  #about {
+    width: 100%;
+    min-height: 850px;
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  #about #leftAboutContent {
+    font-family: helvetica;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 90%;
+  }
+  #about #leftAboutContent #leftAboutHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #about #leftAboutContent #leftAboutP {
+    color: #707070;
+    font-size: 2.2vw;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  #about #leftAboutContent #leftAboutImg {
+    background-color: black;
+    height: 300px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/the-best-beginner-nike-running-shoes.jpg");
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+  #about #rightAboutContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  #about #rightAboutContent #rightAboutP {
+    font-family: helvetica;
+    color: #707070;
+    font-size: 2.2vw;
+    width: 95%;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  #about #rightAboutContent #greenBar {
+    width: 100%;
+    height: 50px;
+    background-size: contain;
+    background-color: #707070;
+    margin-top: 30px;
+  }
+}
 #products {
   width: 100%;
   height: 90vh;
@@ -199,7 +378,7 @@ nav #rightNav a:hover {
   width: 95%;
   margin-top: 150px;
   color: #707070;
-  font-size: 3vh;
+  font-size: 2vh;
   line-height: 40px;
 }
 #products #leftProducts #btnContainer {
@@ -232,13 +411,13 @@ nav #rightNav a:hover {
   margin-top: 36px;
 }
 #products #rightProducts #rightProdsHeader {
-  color: #707070;
+  color: #00E56B;
   width: 100%;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-size: 3vw;
+  font-size: 3.3vw;
 }
 #products #rightProducts #productImgs {
   display: flex;
@@ -266,6 +445,97 @@ nav #rightNav a:hover {
   background-image: url("../images/whoop.webp");
 }
 
+@media only screen and (max-width: 960px) {
+  #products {
+    width: 100%;
+    min-height: 750px;
+    height: 65vh;
+    position: relative;
+    display: flex;
+    position: relative;
+    font-family: helvetica;
+    padding-bottom: 0px;
+  }
+  #products #leftProducts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #products #leftProducts #leftProductsP {
+    width: 105%;
+    margin-top: 0px;
+    color: #707070;
+    font-size: 1.5vh;
+    line-height: 20px;
+  }
+  #products #leftProducts #btnContainer {
+    margin-top: -200px;
+    width: 50%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 200px;
+  }
+  #products #leftProducts #btnContainer #moreProducts {
+    height: 50%;
+    width: 100%;
+    background-size: contain;
+    background-color: #00E56B;
+    border: 0px;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    padding: 20px;
+  }
+  #products #leftProducts #btnContainer #moreProducts:hover {
+    background-color: white;
+    border: 8px solid #00E56B;
+  }
+  #products #rightProducts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+  }
+  #products #rightProducts #rightProdsHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3vw;
+  }
+  #products #rightProducts #productImgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin-left: 40px;
+  }
+  #products #rightProducts #productImgs #phone {
+    height: 100%;
+    width: 120%;
+    margin-right: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/Diet-2-749r0hn1kgu0zrm9rf8pjg8w4y400h8pz4nnluxemvk.png");
+    margin-right: -50px;
+    margin-top: 40px;
+  }
+  #products #rightProducts #productImgs #phone #watch {
+    height: 45%;
+    width: 45%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/whoop.webp");
+  }
+}
 #services {
   width: 100%;
   height: 90vh;
@@ -362,6 +632,107 @@ nav #rightNav a:hover {
   border: 8px solid #00E56B;
 }
 
+@media screen and (max-width: 960px) {
+  #services {
+    width: 100%;
+    min-height: 700px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    font-family: helvetica;
+  }
+  #services #serWords {
+    height: 55%;
+    width: 100%;
+    display: flex;
+  }
+  #services #serWords #leftWords {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  #services #serWords #leftWords #leftServHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3vw;
+    margin-bottom: 30px;
+  }
+  #services #serWords #leftWords #leftServP {
+    color: #707070;
+    font-size: 1.8vw;
+    width: 95%;
+  }
+  #services #serWords #rightWords {
+    margin-top: 20px;
+    width: 55%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+  }
+  #services #serWords #rightWords .sDesc {
+    width: 100%;
+    height: 45%;
+  }
+  #services #serWords #rightWords .sDesc #sGreen {
+    color: #00E56B;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  #services #serWords #rightWords .sDesc #sReadout {
+    color: #707070;
+    font-size: 1.5vw;
+    margin-bottom: 20px;
+  }
+  #services #imgBtn {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #services #imgBtn #gymImg {
+    height: 140%;
+    width: 60%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/unspecified-21-1024x682.jpeg");
+    margin-top: 10px;
+  }
+  #services #imgBtn #gbContainer {
+    height: 25%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+  }
+  #services #imgBtn .greenBtn {
+    height: 10%;
+    padding: 20px;
+    width: 53%;
+    background-size: contain;
+    background-color: #00E56B;
+    border: 0px;
+    color: #707070;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    margin-left: 30px;
+    text-align: center;
+  }
+  #services #imgBtn .greenBtn:hover {
+    background-color: white;
+    border: 8px solid #00E56B;
+  }
+}
 #contact {
   width: 100%;
   height: 90vh;
@@ -435,6 +806,231 @@ nav #rightNav a:hover {
   background-color: lightgray;
 }
 
+@media screen and (max-width: 960px) {
+  #contact {
+    width: 100%;
+    height: 70vh;
+    min-height: 750px;
+    display: flex;
+    font-family: helvetica;
+    margin-bottom: 100px;
+  }
+  #contact #leftContact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-top: 260px;
+  }
+  #contact #leftContact #locationsHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 4vw;
+    margin-bottom: 30px;
+  }
+  #contact #leftContact .locations {
+    width: 100%;
+    margin-bottom: 25px;
+    color: #707070;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-bottom: 100px;
+  }
+  #contact #rightContact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  #contact #rightContact #contactHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3vw;
+    margin-top: 46px;
+    margin-bottom: 180px;
+    margin-left: 160px;
+  }
+  #contact #rightContact .contactForm {
+    font-size: 1.5vw;
+    font-weight: bold;
+    height: 80%;
+  }
+  #contact #rightContact .contactForm label {
+    margin-bottom: 20px;
+  }
+  #contact #rightContact .contactForm input {
+    width: 80%;
+    height: 20%;
+    border: 2 solid #707070;
+    margin-top: 20px;
+    background-color: lightgray;
+  }
+  #contact #rightContact .contactForm #qc {
+    width: 80%;
+    height: 40%;
+    border: 2 solid #707070;
+    margin-top: 20px;
+    background-color: lightgray;
+  }
+}
+@media screen and (max-width: 960px) {
+  #contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    font-family: helvetica;
+    margin-bottom: 100px;
+  }
+  #contact #leftContact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-top: 260px;
+  }
+  #contact #leftContact #locationsHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 4vw;
+    margin-bottom: 30px;
+  }
+  #contact #leftContact .locations {
+    width: 100%;
+    margin-bottom: 25px;
+    color: #707070;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-bottom: 100px;
+  }
+  #contact #rightContact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 40px;
+  }
+  #contact #rightContact #contactHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3vw;
+    margin-top: 46px;
+    margin-bottom: 180px;
+    margin-left: 160px;
+  }
+  #contact #rightContact .contactForm {
+    font-size: 1.5vw;
+    font-weight: bold;
+    height: 80%;
+  }
+  #contact #rightContact .contactForm label {
+    margin-bottom: 20px;
+  }
+  #contact #rightContact .contactForm input {
+    width: 80%;
+    height: 20%;
+    border: 2 solid #707070;
+    margin-top: 20px;
+    background-color: lightgray;
+  }
+  #contact #rightContact .contactForm #qc {
+    width: 80%;
+    height: 40%;
+    border: 2 solid #707070;
+    margin-top: 20px;
+    background-color: lightgray;
+  }
+}
+@media screen and (max-width: 960px) and (max-width: 960px) {
+  #contact {
+    width: 100%;
+    height: 50vh;
+    min-height: 750px;
+    display: flex;
+    font-family: helvetica;
+    margin-bottom: 20px;
+  }
+  #contact #leftContact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-top: 0px;
+  }
+  #contact #leftContact #locationsHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 4vw;
+    margin-bottom: 30px;
+  }
+  #contact #leftContact .locations {
+    width: 100%;
+    margin-bottom: 15px;
+    color: #707070;
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  #contact #rightContact {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 0px;
+    margin-left: 30px;
+  }
+  #contact #rightContact #contactHeader {
+    color: #707070;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 3vw;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  #contact #rightContact .contactForm {
+    font-size: 1.5vw;
+    font-weight: bold;
+    height: 10%;
+  }
+  #contact #rightContact .contactForm label {
+    margin-bottom: 20px;
+  }
+  #contact #rightContact .contactForm input {
+    width: 80%;
+    height: 20%;
+    border: 2 solid #707070;
+    margin-top: 20px;
+    background-color: lightgray;
+  }
+  #contact #rightContact .contactForm #qc {
+    width: 80%;
+    height: 40%;
+    border: 2 solid #707070;
+    margin-top: 20px;
+    background-color: lightgray;
+  }
+}
 footer {
   margin-top: 100px;
   font-family: helvetica;
@@ -481,6 +1077,43 @@ footer #rightIcons img {
   height: 100%;
   width: 100%;
   size: cover;
+}
+
+@media screen and (max-width: 660px) {
+  footer {
+    margin-top: 100px;
+    font-family: helvetica;
+    width: 100%;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #707070;
+  }
+  footer #leftNav {
+    height: 100%;
+    width: 550px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  footer #leftNav a {
+    text-decoration: none;
+    color: #00E56B;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  footer #leftNav a img {
+    height: 36px;
+    width: 36px;
+    size: cover;
+  }
+  footer #leftNav a:hover {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

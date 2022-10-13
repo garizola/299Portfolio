@@ -117,3 +117,134 @@
       
     }
 }
+@media screen and (max-width: 960px){
+    #services {
+        width: 100%;
+        min-height: 700px; 
+        height: 75vh;
+
+        // border: 5px dotted green;
+        // position: relative;
+        display: flex;
+        flex-direction: column;
+        font-family: helvetica;
+    
+        #serWords {
+            height: 55%;
+            width: 100%;
+    
+            // border: 2px dotted rosybrown ;
+            display: flex;
+    
+            #leftWords {
+                width: 45%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                #leftServHeader {
+                    color: $site-grey;
+                    width: 100%;
+                    font-weight: bold;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    font-size: 3vw;
+                    margin-bottom: 30px;
+    
+                }
+                #leftServP {
+                    color: $site-grey;
+                    font-size: 1.8vw;
+                    width: 95%;
+                    // margin-bottom: 70px;
+                }
+            }
+            #rightWords {
+                margin-top: 20px;
+                width: 55%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 32px;
+    
+                .sDesc {
+                    width: 100%;
+                    height: 45%;
+                    #sGreen {
+                        
+                        color: $site-green;
+                        font-size: 1.8vw;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+    
+        
+                    }
+                    #sReadout {
+                        color: $site-grey;
+                        font-size: 1.5vw;
+                        margin-bottom: 20px;
+                    }
+                } 
+    
+            }
+        }
+        #imgBtn {
+            height: 25%;
+            width: 100%;
+            // border: 2px dotted blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            // border: 2px dotted black;
+            
+            #gymImg {
+                height: 140%;
+                width: 60%;
+    
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url("../images/unspecified-21-1024x682.jpeg");
+    
+                margin-top: 10px;
+            }
+    
+            #gbContainer {
+                height: 25% ;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                // border: 2px dotted gray;
+                margin-top: -50px;
+            
+                
+            }
+            .greenBtn {
+                height: 10%;
+                padding: 20px;
+                width: 53%;
+                background-size: contain;
+                background-color: $site-green;
+                border: 0px;
+                color: $site-grey;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                font-size: 1.3vw;
+                margin-left: 30px;
+                text-align: center;
+    
+            }
+    
+            .greenBtn:hover {
+                background-color: white;
+                border: 8px solid $site-green;
+                // border-radius: 75%;
+            }
+    
+          
+        }
+    }
+    
+        
+}

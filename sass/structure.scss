@@ -32,3 +32,17 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
  margin-bottom: 16px;
 }
+
+@media screen and (max-width: 960px){
+    body {
+        padding: 10px;
+        .container {
+            padding-bottom: 50px;
+            display: flex;
+        
+            // background-color: #00E56B;
+        }
+    }
+    
+        
+}

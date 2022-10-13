@@ -71,6 +71,91 @@
 
 }
 
-// @media screen (max-width: 500px) {
+@media only screen and (max-width: 960px){
+    #about {
+        width: 100%;
+        min-height: 850px;
+        max-height: 75vh; 
+        // border: 5px dotted green;
+        // position: relative;
+        display: flex;
+        flex-direction: column;
     
-// }
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        
+        // position: relative;
+    
+        #leftAboutContent {
+            font-family: helvetica;
+            
+            //border: 3px dotted yellowgreen;
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px;
+            
+            width: 90%;
+            #leftAboutHeader {
+                color: $site-grey;
+                width: 100%;
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                font-size: 5vw;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                
+               
+            }
+            #leftAboutP {
+                color: $site-grey;
+                font-size: 2.2vw;
+                width: 95%;
+                margin-bottom: 20px;
+            }
+    
+            #leftAboutImg {
+                background-color: black;
+                height: 300px;
+                width: 200px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url("../images/the-best-beginner-nike-running-shoes.jpg");
+                margin-top: 20px;
+                margin-bottom: 40px;
+                margin-left: 0px;
+                
+            
+            }
+        }
+    
+        #rightAboutContent {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            #rightAboutP {
+            font-family: helvetica;
+                color: $site-grey;
+                font-size: 2.2vw;
+                width: 95%;
+                margin-bottom: 20px;
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+            #greenBar {
+               
+                width: 100%;
+                height: 50px;
+                background-size: contain;
+                background-color: $site-grey;
+                margin-top: 30px;
+            }
+        }
+    
+    }
+}
