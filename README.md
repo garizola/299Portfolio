@@ -1,5 +1,7 @@
 # Design Understanding & Links
 
+![magnitude fitness screenshot](./magnitudeSS.png)
+
 ## My idea for this design was inspired my similar trending modern designs
 
 - ### The navigation is pretty straightforward. The target market for this design and brand is a simple fitness company that owns all of it's own products including gyms, fitness app, and tracking watch. I choose the color scheme because I believe it is more aimed toward a younger audience. Not to say that people that are past 40 are old. However, there area a large amount of younger people looking for a fitness brand like "Magnitude".
